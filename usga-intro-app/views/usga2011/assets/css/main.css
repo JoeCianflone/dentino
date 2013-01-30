@@ -1,0 +1,282 @@
+/*
+ * Reset CSS
+ * ------------------------------------------------------------------------- */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure,  footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { background:transparent;  border:0;  font-size:100%;  margin:0;  padding:0;  outline:0;  vertical-align:baseline; }                  
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block; }
+button, input, select, textarea { margin: 0; }
+input, select, button { vertical-align:middle; }
+input[type="radio"] { vertical-align: text-bottom; }
+input[type="checkbox"], input[type="submit"] { vertical-align: bottom; }
+button { width: auto; overflow: visible; }
+input[type="button"], input[type="submit"], button {  cursor: pointer; }
+label { vertical-align: middle; }
+a:hover, a:active, :focus { outline: none; }
+table { border-collapse:collapse; border-spacing:0; }
+textarea { overflow: auto; }
+strong, th { font-weight: bold; }
+del { text-decoration: line-through; }
+td, td img { vertical-align: top; }
+sub { font-size: 8px; vertical-align: sub; }
+sup { font-size: 8px; vertical-align: super; }
+ol { list-style-type: decimal; margin-left: 18px; }
+ul { list-style-type: disc; margin-left: 18px;}
+body, select, input, textarea { color: #000; font-family: Arial, Helvetica, Sans-Serif; font-size: 12px; }
+/*
+ * Non-semantic helpers
+ * ------------------------------------------------------------------------- */
+/* image replacement */
+.ir { display: block; text-indent: -99999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+/* easy float clearing */
+.clear:before, .clear:after { content: "\0020"; display: block; height: 0; visibility: hidden; } 
+.clear:after { clear: both; }
+.clear { zoom: 1; }
+/* convert a unordered list into a nav element with NO bullets */
+.nav { list-style-type: none; margin-left: 0px; }
+
+/*
+ * Global HTML Styles
+ * ------------------------------------------------------------------------- */
+body {
+	background: #f3f5f4 url(../images/bkg_body.png) 0px 0px repeat-x;
+	font-family: Arial, Helvetica, Sans-Serif;
+}
+
+h2 {
+	color: #cc0033;
+	font-size: 29px;
+	padding: 0 0 10px 0;
+	text-transform: uppercase;
+}
+a {
+	text-decoration: none;
+}
+
+#logo {
+	padding: 0 34px;
+	text-align: right;
+}
+
+.introtxt {
+	color: #002878;
+	font-size: 20px;
+	float: left;
+	padding: 25px 0 25px 0 ;
+}
+.logo {
+	float: right;
+}
+
+/*
+ * Content
+ * ------------------------------------------------------------------------- */
+
+#content,
+#content-top,
+#content-bottom {
+	background: transparent url(../images/bkg_inner-body.png) 0 0 repeat-y;
+	margin:  0px auto;
+	min-height: 536px;
+	width: 925px;
+}
+#content-top {
+	margin-top: 55px;
+}
+
+#content-top {
+	background: transparent url(../images/bkg_inner-top.png) 0 0 no-repeat;
+	height: 20px;
+	min-height: 0;
+}
+#content-bottom {
+	background: transparent url(../images/bkg_inner-bottom.png) 0 0 no-repeat;
+	height: 40px;
+	min-height: 0;	
+}
+
+#content-secondary {
+	float: right;
+	padding: 46px 20px 0 0;		
+	text-align: center;
+	width: 310px;
+}
+
+/*
+ * Navigation Main
+ * ------------------------------------------------------------------------- */
+#navigation-main {
+	background: transparent url(../images/btn_navigation.png) 0 100% no-repeat;
+	list-style-type: none; 
+	margin-left: 0px;
+	height: 40px;
+}
+#navigation-main li {
+	float: left;
+}
+
+#navigation-main li a {
+	display: block;
+	width: 178px;
+	height: 38px;
+}
+
+#navigation-main.how {
+	background-position: 0 -44px;
+}
+#navigation-main.next {
+	background-position: 0 0;
+}
+
+/*
+ * Main Content
+ * ------------------------------------------------------------------------- */
+
+#content-main {
+	background: transparent url(../images/bkg_stage.png) 0 100% no-repeat;
+	height: 402px;
+	margin: 0 auto;
+	width: 552px;
+}
+
+
+
+/*
+ * Player Controls
+ * ------------------------------------------------------------------------- */
+#controls {
+	background: transparent url(../images/btn_controls-main.png) 50% 0 no-repeat;
+	margin-top: 5px;
+}
+
+#player-controls {
+	margin: 0 auto;
+	width: 306px;
+}
+
+#player-controls li { float: left; }
+
+#player-controls li a { 
+	display: block; 
+}
+.button {
+	height: 60px;
+	width: 40px;
+}
+#play {
+	width: 68px;
+}
+#pause {
+	width: 79px;
+}
+#print {
+	width: 86px;
+}
+#send {
+	width: 65px;
+}
+/*
+ * Secondary Content
+ * ------------------------------------------------------------------------- */
+
+#content-secondary {
+	color: #333;
+	font-size: 17px;
+}
+#content-secondary img {
+	padding: 20px 0 10px 0;
+}
+#content-secondary strong,
+#content-secondary a {
+	color: #004990;
+}
+
+#content-secondary #final-secondary {
+	display: none;
+}
+/*
+ * Stage Elements
+ * ------------------------------------------------------------------------- */
+
+#stage {
+   color: #fff;
+   height: 326px;
+   padding: 18px;
+   width: 510px;
+}
+.slide {
+	position: relative;
+	line-height: normal;
+	height: 336px;
+	text-align: center;
+}
+
+.slide h2,
+.slide h1 {
+	color: inherit;
+}
+
+
+.intro h2 {
+	padding: 25px 0 14px 0;	
+}
+.intro p { 
+	padding: 0 0 10px 0;
+}
+
+.size20 { font-size: 20px; }
+.size30 { font-size: 30px; }
+.size18 { font-size: 18px; }
+.size15 { font-size: 15px; }
+
+.build { display: none; }
+
+#stage p a img { float: left;  padding: 0 0 10px 0;}
+
+/*
+ * Modal and Contact Form
+ * ------------------------------------------------------------------------- */
+#contact-form {
+	background: #fff;
+	border: 8px solid #444;
+	display: none;
+	width: 500px;
+	min-height: 300px;
+	padding: 10px;
+}
+
+#simplemodal-overlay {background-color:#000;}
+.simplemodal-close { 
+	position: absolute;
+	top: -5px;
+	right: -5px;
+}
+
+#contact-form p {
+	padding: 10px 0;
+}
+
+#contact-form label {
+	display: block;
+	float: left;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 3px;
+	width: 116px;
+}
+#contact-form span {
+   display: block;
+	font-size: 11px;
+	font-style: italic;
+   float: left;
+	padding: 5px 0;
+   width: 100%;
+}
+
+#contact-form input[type="text"] {
+	width: 250px;
+}
+#contact-form label.error {
+	color: #f00;
+	clear: both;
+	width: 100%;
+	padding: 2px 0 10px 0;
+}

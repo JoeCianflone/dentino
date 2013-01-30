@@ -1,0 +1,133 @@
+/* Reset Styles */ 
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure,  footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { background:transparent;  border:0;  font-size:100%;  margin:0;  padding:0;  outline:0; font-weight: normal; vertical-align:baseline; }                  
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block; }
+button, input, select, textarea { margin: 0; }
+input, select, button { vertical-align:middle; }
+input[type="radio"] { vertical-align: text-bottom; }
+input[type="checkbox"], input[type="submit"] { vertical-align: bottom; }
+button { width: auto; overflow: visible; }
+input[type="button"], input[type="submit"], button {  cursor: pointer; }
+label { vertical-align: middle; }
+a:hover, a:active, :focus { outline: none; }
+table { border-collapse:collapse; border-spacing:0; }
+textarea { overflow: auto; }
+strong, th { font-weight: bold; }
+del { text-decoration: line-through; }
+td, td img { vertical-align: top; }
+sub { font-size: 8px; vertical-align: sub; }
+sup { font-size: 8px; vertical-align: super; }
+ol { list-style-type: decimal; margin-left: 18px; }
+ul { list-style-type: disc; margin-left: 18px;}
+body, select, input, textarea { color: #000; font-family: Arial, Helvetica, Sans-Serif; font-size: 12px; }
+
+body {
+   background: transparent url(../img/bkg_gradient.png) 0 0 repeat-x;
+   color: #333;
+}
+#wrapper {
+   background: #fff;
+   width: 970px;
+   margin: 30px auto 0 auto;
+   -webkit-box-shadow: 0px 1px 10px #111;
+   -moz-box-shadow: 0px 1px 10px #111;
+   box-shadow: 0px 1px 10px #111;
+   position: relative;
+   padding: 5px;
+   behavior: url(css/PIE.htc);
+}
+.content {
+   background: url(../img/bkg_gradient-inner.png) 0 100% repeat-x;
+   border: 1px solid #c4deec;
+}
+
+h1.logo {
+  background: transparent url(../img/logo.png) 25px 15px no-repeat; 
+  padding: 15px 0 45px 20px;
+  width: 120px;
+  height: 25px;
+  float: left;
+}
+h2.banner {
+   background: transparent url(../img/bkg_banner.png) 0 15px no-repeat;
+   height: 30px;
+   width: 160px;
+   padding: 15px 0 45px 20px;
+   float: right;
+}
+.content-main {
+   margin: 20px 70px 60px 70px;
+}
+.terms-stage {
+   background: #fff;
+   border: 1px solid #b3d0e2;
+   padding: 15px 30px;
+   -webkit-border-radius: 25px;
+   -moz-border-radius: 25px;
+   border-radius: 25px;
+   -webkit-box-shadow: 0 0 45px #e8ebec inset;
+   -moz-box-shadow: 0 0 45px #e8ebec inset;
+   box-shadow: 0 0 45px #e8ebec inset;
+   behavior: url(css/PIE.htc);
+
+}
+.terms-stage header h1 {
+   color: #0063be;
+   text-transform: uppercase;
+   font-size: 14px;
+   font-weight: bold;
+   padding-bottom: 25px;
+}
+.terms-stage p {
+   color: #333;
+   font-size: 12.5px;
+   line-height: 1.3em;
+   padding-bottom: 50px;
+}
+footer p {
+   padding: 0 50px 10px 19px;
+   font-size: 11px;
+}
+footer ul {
+   padding: 5px 0 0 15px;
+}
+footer ul,
+footer a {
+   color: #666;
+   display: block;
+   float: left;
+}
+footer ul li {
+   float: left;
+   font-size: 10px;
+}
+.tagline {
+   background: transparent url(../img/bkg_tagline.png) 2px 9px no-repeat;
+   float: right;
+   width: 75px;
+   height: 10px;
+}
+.site-footer {
+   color: #4C4C4C;
+   font-size: 8px;
+   margin: 0 auto;
+   padding: 8px 0;
+   text-align: right;
+   width: 948px;
+}
+.site-footer p {
+   margin: 0;
+   padding: 0;
+   font-size: 10px;
+}
+label.error {
+   width: 304px;
+   color: #f00;
+}
+/* image replacement */
+.ir { display: block; text-indent: -99999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+/* easy float clearing */
+.clear:before, .clear:after { content: "\0020"; display: block; height: 0; visibility: hidden; } 
+.clear:after { clear: both; }
+.clear { zoom: 1; }
+/* convert a unordered list into a nav element with NO bullets */
+.nav { list-style-type: none; margin-left: 0px; }

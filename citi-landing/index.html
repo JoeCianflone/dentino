@@ -1,0 +1,74 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en">  <!--<![endif]-->
+<head>
+   <meta charset="utf-8">
+   <title>Citi</title>
+   <meta name="viewport" content="width=device-width,initial-scale=1">
+   <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+   <div id="wrapper">
+      <div id="header">
+         <h1 class="logo ir"><a href="#">Citi</a></h1>
+         <h2 class="ir">Help Build Your Financial Future with a Great Card</h2>
+      </div>
+      <div id="masthead" class="ir">
+         <p>Apply for your Citi Secured MasterCard<sup>&reg;</sup> today&ndash;even if you are new to credit or are re-establishing credit</p>
+      </div>
+      <div id="content" class="clear">
+         <div id="content-main">
+            <dl>
+               <dt>Help build your credit for future needs</dt>
+               <dd>Your on-time payments can help strengthen your credit over time.</dd>
+            </dl>
+            <dl>
+               <dt>Credit line equals your security deposit from $200 to $5,000.</dt>
+               <dd>Your credit line will equal the amount you deposit in an 18-month Certificate of Deposit&ndash;from $200 to $5,000</dd>
+            </dl>
+            <dl>
+               <dt>Earn interest on your security deposit</dt>
+               <dd>Earn a competitive annual interest rate on your CD based on your deposit.</dd>
+            </dl>
+            <dl class="no-toggle">
+               <dt>$29 annual fee</dt>
+            </dl>
+            <dl class="last">
+               <dt>Enjoy a full array of Citi MasterCard benefits</dt>
+               <dd>
+                  <p><strong>The low annual fee of just $29 includes all of these benefits and more. <a href="#">Apply now</a>.</strong></p>
+                  <ul>
+                     <li>$0 liability for unauthorized charges</li>
+                     <li>Theft and damage protection</li>
+                     <li>Rental car insurance</li>
+                     <li>Unsurpassed worldwide acceptance</li>
+                  </ul>
+               </dd>
+            </dl>                                                
+            <p><a href="#" class="button ir">Apply Now</a></p>            
+         </div>
+         <div id="content-secondary">
+            <p><a href="#" class="button ir">Apply Now</a></p>
+         </div>         
+      </div>
+      <div id="footer" class="ir">Secure Application</div>         
+   </div>
+   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+   <script src="/js/jquery-1.6.4.min.js"></script>   
+   <script>
+      $(document).ready(function(){
+         $('dl dt').click(function(e) {
+            e.preventDefault();
+            var $this = $(this).parent();
+            
+            if ( ! $this.hasClass('no-toggle')) {
+               $this.toggleClass('open');
+               $('dd', $this).slideToggle(200);               
+            }
+         });
+      });
+   </script>
+</body>
+</html>

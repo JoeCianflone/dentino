@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Combo App</title>
+    <link rel="stylesheet" href="styles/app_common.css" media="all" />
+      <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+        <meta name="MSSmartTagsPreventParsing" content="TRUE" />
+        <meta http-equiv="imagetoolbar" content="no" />
+        <script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+
+  </head>
+  <body>
+    <form method="post" id="combo_form" action="/something">
+      <div id="wrapper">
+        <header>
+           <a class="privacy" href="https://www.chase.com/ccp/index.jsp?pg_name=ccpmapp/privacy_security/protection/page/protect" rel="external" title="Privacy">Privacy</a>
+           <a class="security" href="https://www.chase.com/ccp/index.jsp?pg_name=ccpmapp/privacy_security/protection/page/protect" rel="external" title="Security">Security</a>
+           <a class="terms" href="https://www.firstusa.com/cgi-bin/webcgi/webserve.cgi?page_type=appterms&card=CV4W" rel="external" title="Pricing and Terms">Pricing and Terms</a>
+           <div id="arrow" class="rollover_button">
+              <span class="text">Easy 2-Minute Request Form</span>
+              <div class="rollover_box arrow">
+                 <div class="rollover_content">
+                    <div class="rollover_header"></div>
+                    <div class="rollover_internal">
+                       <p>Do you have a Chase Online User ID and Password?</p>
+                       <p>To save you time we can prefill some information in your application from your customer profile. <a href="#" class="got_user">Sign in with your username and password</a>.</p>
+                    </div>
+                    <div class="rollover_footer"></div>
+                 </div>
+              </div>
+           </div>
+
+           <div id="cb1" class="rollover_button">
+              <span class="text">Easy 2-Minute Request Form</span>
+              <div class="rollover_box cb1">
+                 <div class="rollover_content">
+                    <div class="rollover_header"></div>
+                    <div class="rollover_internal">
+                       <p>Earn 5% cash back in bonus categories that change quarterly.*<br /><a href="">See 2010 Calendar</a>.</p>
+                    </div>
+                    <div class="rollover_footer"></div>
+                 </div>
+              </div>
+           </div>
+
+           <div id="cb2" class="rollover_button">
+              <span class="text">Easy 2-Minute Request Form</span>
+              <div class="rollover_box cb2">
+                 <div class="rollover_content">
+                    <div class="rollover_header"></div>
+                    <div class="rollover_internal">
+                       <p>Earn an unlimited 1% cash back on all other purchases.*</p>
+                    </div>
+                    <div class="rollover_footer"></div>
+                 </div>
+              </div>
+           </div>
+
+           <div id="cb3" class="rollover_button">
+              <span class="text">Easy 2-Minute Request Form</span>
+              <div class="rollover_box cb3">
+                 <div class="rollover_content">
+                    <div class="rollover_header"></div>
+                    <div class="rollover_internal">
+                       <p>Get up to 20% ADDITIONAL cash back when you shop online at select merchants through Chase.</p>
+                    </div>
+                    <div class="rollover_footer"></div>
+                 </div>
+              </div>
+           </div>
+
+           <div id="cb4" class="rollover_button">
+              <span class="text">Easy 2-Minute Request Form</span>
+              <div class="rollover_box cb4">
+                 <div class="rollover_content">
+                    <div class="rollover_header"></div>
+                    <div class="rollover_internal">
+                       <p>Save with 0% Intro APR for 12 months on balance transfers requested with this application plus 0% Intro APR for 6 months on new purchases. After each intro period, a variable APR of 12.99% - 22.99%.</p>
+                    </div>
+                    <div class="rollover_footer"></div>
+                 </div>
+              </div>
+           </div>
+           <div class="details_box">
+              <a class="details_button" href="#"><span class="close">X - CLOSE</span></a>
+              <div class="details_panel">
+                 <p><strong>No Annual Fee</strong></p>
+                 <p>Please see Pricing &amp; Terms for complete details about rates, fees, and other costs.</p>
+                 <p><strong>5% Cash Back</strong></p>
+                 <p>You earn 1% on all purchases and 4% more in bonus categories for a total of 5%. 4% bonus earn is subject to a quarterly maximum. You will be eligible for quarterly bonuses as long as (i) your account is not in default under, and/or you have not violated, the terms of your Cardmember Agreement and Rewards Program Rules and Regulations at the time accounts are selected for the promotional offers, and (ii) your statements are sent to a US address. Quarterly enrollment required.</p>
+                 <p><strong>1% Cash Back</strong></p>
+                 <p>You will earn 1 point for each $1 of net purchases. You will earn an additional 1 point for each $1 of eligible airfare net purchases made online through the program booking tool. You do not earn points on balance transfers, cash advances, cash-like charges such as travelers checks, foreign currency, and money orders, any checks that are used to access your account, overdraft advances, interest, unauthorized or fraudulent charges, or fees of any kind, including fees for products that protect or insure the balances of your account. There is no maximum number of points that you can accumulate in the program. Bonus/Promotional offers may have a maximum accumulation. A service fee of up to $20 per ticket may be charged for the use of our toll-free number to book or change airline itineraries. Redemptions made online do not have a service fee. See Rewards Program Rules and Regulations which will be mailed after your account is established.</p>
+              </div>
+           </div>
+           <a href="#" onclick="javascript:print();" class="btn_print">Print Page</a>
+        </header>
+         <fieldset id="username">
+            <legend>Chase Customers</legend>
+            <p class="clear"><label for="uid" class="list">User ID: </label><input type="text" id="uid" class="long" name="uid" value="" /></p>
+            <p class="clear"><label for="password" class="list">Password: </label><input type="password" id="password" name="password" class="long" value="" /></p>
+            <p class="clear"><label for="blank" class="list">&nbsp;</label><input type="submit" value="Prefill Form" /></p>
+         </fieldset>
+
+         <fieldset id="about_you_information">
+           <legend>About You<span class="req">*</span></legend>
+           <div id="inital_questions" class="clear">
+              <div class="clear" style="padding: 2px 0 2px 0;">
+              <p class="larger_question"><strong>To save time, answer these questions first:</strong></p>
+              </div>
+              <div class="clear">
+                 <p class="inline large_question">Is your credit history clear of bankruptcies/seriously delinquent accounts?</p>
+                 <p class="inline spacer_right">
+                   <input type="radio" value="yes" name="history" id="history_yes" /><label for="history_yes">Yes</label>
+                 </p>
+                 <p class="inline">
+                   <input type="radio" value="no" name="history" id="history_no" /><label for="history_no">No</label>
+                 </p>
+              </div>
+              <div class="clear">
+                 <p class="inline large_question">Do you want to be considered for other options if you do not qualify for this card?</p>
+                 <p class="inline spacer_right">
+                   <input type="radio" value="yes" name="other_options" id="other_options_yes" /><label for="other_options_yes">Yes</label>
+                 </p>
+                 <p class="inline">
+                   <input type="radio" value="no" name="other_options" id="other_options_no" /><label for="other_options_no">No</label>
+                 </p>
+              </div>
+           </div>
+           <p class="clear" id="first_name_field"><label for="first_name" class="list">First Name: </label><input value="" type="text" id="first_name" class="long letters required" title="required" name="first_name" /></p>
+
+           <p class="clear"><label for="mi" class="list">MI: </label><input type="text" id="mi" name="mi" class="short" value="" maxlength="1"/></p>
+           <p class="clear"><label for="last_name" class="list">Last Name: </label><input type="text" id="last_name" name="last_name" class="long spacer_right required letters" value="" />
+             <select name="suffix" id="suffix">
+               <option value="">Suffix</option>
+               <option value="">Jr</option>
+               <option value="">Sr</option>
+               <option value="">II</option>
+               <option value="">III</option>
+               <option value="">IV</option>
+               <option value="">V</option>
+               <option value="">DDM</option>
+               <option value="">DDS</option>
+               <option value="">DO</option>
+               <option value="">ESQ</option>
+               <option value="">MD</option>
+               <option value="">RN</option>
+             </select>
+           </p>
+           <p class="clear"><label for="address1" class="list">Home Street Address Line 1: </label><input type="text" id="address1" class="long required" name="address1" value="" /></p>
+           <p class="clear"><label for="address2" class="list">Home Street Address Line 2: </label><input type="text" id="address2" class="long" name="address2" value="" /></p>
+           <p class="clear"><label for="unit" class="list">Unit/Apt: </label><input type="text" id="unit" class="short" name="unit" value="" /></p>
+           <p class="clear">
+              <label for="zip" class="list">Zip Code: </label><input type="text" id="zip" class="short spacer_right required digits" name="zip" value="" maxlength="5" />
+              <label for="city" class="inline">City: </label><input type="text" id="city" class="medium spacer_right" name="city" value="" />
+              <select name="state" id="state">
+               <option value="">State</option>
+            	<option value="AK">AK</option>
+            	<option value="AL">AL</option>
+            	<option value="AR">AR</option>
+            	<option value="AZ">AZ</option>
+            	<option value="CA">CA</option>
+            	<option value="CO">CO</option>
+            	<option value="CT">CT</option>
+            	<option value="DC">DC</option>
+            	<option value="DE">DE</option>
+            	<option value="FL">FL</option>
+            	<option value="GA">GA</option>
+            	<option value="HI">HI</option>
+            	<option value="IA">IA</option>
+            	<option value="ID">ID</option>
+            	<option value="IL">IL</option>
+            	<option value="IN">IN</option>
+            	<option value="KS">KS</option>
+            	<option value="KY">KY</option>
+            	<option value="LA">LA</option>
+            	<option value="MA">MA</option>
+            	<option value="MD">MD</option>
+            	<option value="ME">ME</option>
+            	<option value="MI">MI</option>
+            	<option value="MN">MN</option>
+            	<option value="MO">MO</option>
+            	<option value="MS">MS</option>
+            	<option value="MT">MT</option>
+            	<option value="NC">NC</option>
+            	<option value="ND">ND</option>
+            	<option value="NE">NE</option>
+            	<option value="NH">NH</option>
+            	<option value="NJ">NJ</option>
+            	<option value="NM">NM</option>
+            	<option value="NV">NV</option>
+            	<option value="NY">NY</option>
+            	<option value="OH">OH</option>
+            	<option value="OK">OK</option>
+            	<option value="OR">OR</option>
+            	<option value="PA">PA</option>
+            	<option value="RI">RI</option>
+            	<option value="SC">SC</option>
+            	<option value="SD">SD</option>
+            	<option value="TN">TN</option>
+            	<option value="TX">TX</option>
+            	<option value="UT">UT</option>
+            	<option value="VA">VA</option>
+            	<option value="VT">VT</option>
+            	<option value="WA">WA</option>
+            	<option value="WI">WI</option>
+            	<option value="WV">WV</option>
+            	<option value="WY">WY</option>
+             </select>
+           </p>
+           <p class="clear">
+             <label for="status" class="list">Residence Status: </label>
+             <select id="status" name="status">
+                <option>Please Select</option>
+               <option>Rent</option>
+               <option>Own</option>
+               <option>Other</option>
+             </select>
+           </p>
+           <p class="clear">
+             <label for="years" class="list">Time at Current Address: </label>
+             <select id="years" name="years">
+               <option>0</option>
+               <option>1</option>
+               <option>2</option>
+               <option>3</option>
+               <option>4</option>
+               <option>5</option>
+               <option>6</option>
+               <option>7</option>
+               <option>8</option>
+               <option>9</option>
+               <option>10</option>
+               <option>11</option>
+               <option>12</option>
+               <option>13</option>
+               <option>14</option>
+               <option>15</option>
+               <option>16</option>
+               <option>17</option>
+               <option>18</option>
+               <option>19</option>
+               <option>20</option>
+             </select>
+             <label class="inline">years</label>
+             <select id="months" value="months">
+               <option>0</option>
+               <option>1</option>
+               <option>2</option>
+               <option>3</option>
+               <option>4</option>
+               <option>5</option>
+               <option>6</option>
+               <option>7</option>
+               <option>8</option>
+               <option>9</option>
+               <option>10</option>
+               <option>11</option>
+             </select>
+             <label class="inline">months</label>
+           </p>
+           <p class="clear"><label for="mortgage" class="list alignbox">Monthly Rent or Mortgage Amount:</label> <span class="inline">$</span><input type="text" name="mortgage" class="medium required digits" id="mortgage" value="" /><span class="inline"> .00</span></p>
+           <p class="clear"><label for="month" class="list">Date of Birth:</label> <input type="text" name="dob" id="month" class="short" value="mm" maxlength="2" /><span class="inline"> /</span> <input type="text" class="short" name="day" id="day" value="dd" maxlength="2" /><span class="inline"> /</span> <input maxlength="4" class="short check_set_dob" type="text" name="year" id="year" value="yyyy" /></p>
+           <p class="clear">
+             <label for="accounts_owned" class="list">Types of Accounts Owned: </label>
+             <select id="accounts_owned" name="accounts_owned">
+               <option>Please Select</option>
+               <option>Checking</option>
+               <option>Savings</option>
+               <option>Both</option>
+               <option>Neither</option>
+             </select>
+           </p>
+
+           <div class="clear spacer_top">
+             <div style="float: left; width: 420px;">
+             <p class="clear inline killpadding"><label for="pre_tax" class="list alignbox">Pre-Tax Yearly Household Income:</label> <span class="inline">$</span><input type="text" class="medium required digits" name="pre_tax" id="pre_tax" value="" /><span class="inline">.00</span></p>
+             <p class="clear inline killpadding"><label for="" class="list alignbox">Other Annual Income:</label> <span class="inline">$</span><input type="text" class="medium" name="" id="" value="" /><span class="inline">.00</span></p>
+             </div>
+             <p class="clear"style="float: left; width: 250px;">For easier qualifying with a larger credit line, please provide your FULL household income; this may include not just salary, but also investment income, Social Security income, and distributions from annuity or retirement accounts.</p>
+           </div>
+
+             <p class="clear spacer_top" style="width: 100%;"><label for="" class="list">&nbsp;</label><em>Alimony, child support, or separate maintenance income need not be revealed if you do not wish it to be considered as a basis for repaying this obligation.</em></p>
+         </fieldset>
+
+         <fieldset id="emplyoment_information">
+           <legend>Employment Information<span class="req">*</span></legend>
+           <p class="clear"><label for="employer" class="list">Employer:</label><input class="long required" type="text" name="employer" id="employer" value="" /></p>
+           <p class="clear">
+             <label for="" class="list">Time at Job:</label>
+             <select>
+               <option>0</option>
+               <option>1</option>
+               <option>2</option>
+               <option>3</option>
+               <option>4</option>
+               <option>5</option>
+               <option>6</option>
+               <option>7</option>
+               <option>8</option>
+               <option>9</option>
+               <option>10</option>
+               <option>11</option>
+               <option>12</option>
+               <option>13</option>
+               <option>14</option>
+               <option>15</option>
+               <option>16</option>
+               <option>17</option>
+               <option>18</option>
+               <option>19</option>
+               <option>20</option>
+             </select>
+             <span class="inline">years</span>
+             <select>
+               <option>0</option>
+               <option>1</option>
+               <option>2</option>
+               <option>3</option>
+               <option>4</option>
+               <option>5</option>
+               <option>6</option>
+               <option>7</option>
+               <option>8</option>
+               <option>9</option>
+               <option>10</option>
+               <option>11</option>
+             </select>
+             <span class="inline">months</span>
+           </p>
+           <p class="clear"><label for="alt_phone1" class="list">Alternate Phone:</label><input type="text" name="alt_phone1" class="phone spacer_right" id="alt_phone1" value="" maxlength="3" /> <input type="text" class="phone spacer_right" name="alt_phone2" id="alt_phone2" value="" maxlength="3" /><input type="text" name="alt_phone3" id="alt_phone3" value="" class="phone check_set_alt_phone" maxlength="4" /></p>
+         </fieldset>
+         <fieldset id="contact_information">
+           <legend>Contact Information<span class="req">*</span></legend>
+           <div class="clear" style="padding: 0 0 5px 0; position:relative;" id="phone_elem">
+           <p><label for="phone1" class="list">Primary Phone:</label><input class="phone spacer_right" type="text" name="phone1" id="phone1" value="" maxlength="3" /><input maxlength="3" class="phone spacer_right" type="text" name="phone2" id="phone2" value="" /><input maxlength="4" type="text" class="phone check_set_phone"  name="phone3" id="phone3" value="" />
+            <div id="cb5" class="rollover_question">
+              <img src="images/icon_question.gif" alt="" />
+              <div class="rollover_box cb5">
+                 <div class="rollover_content">
+                    <div class="rollover_header"></div>
+                    <div class="rollover_internal">
+                       <p>This information is needed in case we ever need to contact you for account related matters.</p>
+                    </div>
+                    <div class="rollover_footer"></div>
+                 </div>
+              </div>
+           </div>
+           </p>
+           </div>
+           <div class="clear" style="padding: 0 0 5px 0; position:relative;" id="phone_elem2">
+           <p class=""><label for="email" class="list">E-mail:</label><input class="long email" type="text" name="email" id="email" value="" />
+              <div id="cb6" class="rollover_question">
+                 <img src="images/icon_question.gif" alt="" />
+                 <div class="rollover_box cb6">
+                    <div class="rollover_content">
+                       <div class="rollover_header"></div>
+                       <div class="rollover_internal">
+                          <p>We use e-mail to notify you when your account is approved and to provide other account management information. We may also use e-mail to contact you regarding special offers and services. If you no longer wish to receive e-mail offers or solicitations from Chase, you may unsubscribe by following the instructions included in every e-mail we send.</p>
+                       </div>
+                       <div class="rollover_footer"></div>
+                    </div>
+                 </div>
+              </div>
+           </p>
+
+         </fieldset>
+         <fieldset id="security_information">
+           <legend>Security Information<span class="req">*</span></legend>
+           <div class="clear" style="padding: 0 0 5px 0; position:relative;" id="phone_elem3">
+           <p class=""><label for="" class="list">Social Security Number:</label><input class="phone spacer_right" type="text" name="" id="" value="" maxlength="3" /><input type="text" class="phone spacer_right" maxlength="2" name="" id="" value="" /><input maxlength="4" class="phone" type="text" name="" id="" value="" />
+              <div id="cb7" class="rollover_question">
+                 <img src="images/icon_question.gif" alt="" />
+                 <div class="rollover_box cb7">
+                    <div class="rollover_content">
+                       <div class="rollover_header"></div>
+                       <div class="rollover_internal">
+                          <p>This information is kept confidential. It is required so we can check your credit history with a national credit bureau.</p>
+                       </div>
+                       <div class="rollover_footer"></div>
+                    </div>
+                 </div>
+              </div>
+           </p>
+           </div>
+           <div class="clear" style="padding: 0 0 5px 0; position:relative;" id="phone_elem4">
+           <p class=""><label for="" class="list">Mother's Maiden Name:</label><input class="long" type="text" name="" id="" value="" />
+              <div id="cb8" class="rollover_question">
+                 <img src="images/icon_question.gif" alt="" />
+                 <div class="rollover_box cb8">
+                    <div class="rollover_content">
+                       <div class="rollover_header"></div>
+                       <div class="rollover_internal">
+                          <p>This information is requested for security purposes and may be used to help verify your identity when you contact us regarding your account. Please enter your mother’s maiden name (your mother’s last name as it appears on her birth certificate).</p>
+                       </div>
+                       <div class="rollover_footer"></div>
+                    </div>
+                 </div>
+              </div>
+           </p>
+           </div>
+         </fieldset>
+         <fieldset>
+            <p><a href="#" class="drop_option button cardholders">Add Cardholders - Open</a></p>
+            <div class="clear" style="display: none;width:668px; padding: 15px 0;">
+            <p clear><label class="list">&nbsp;</label> Yes, please send card(s) at no extra cost for:</p>
+           <p class="clear"><label for="first_name_add" class="list">First Name: </label><input type="text" id="first_name_add" class="long required only_open" title="required" name="first_name_add" value="" /></p>
+           <p class="clear"><label for="mi_add" class="list">MI: </label><input type="text" id="mi_add" name="mi_add" class="short" value="" /></p>
+           <p class="clear"><label for="last_name_add" class="list">Last Name: </label><input type="text" id="last_name_add" name="last_name_add" class="long check_open spacer_right only_open required" value="" />
+             <select name="suffix_add" id="suffix_add">
+               <option value="">Suffix</option>
+               <option value="">Jr</option>
+               <option value="">Sr</option>
+               <option value="">II</option>
+               <option value="">III</option>
+               <option value="">IV</option>
+               <option value="">V</option>
+               <option value="">DDM</option>
+               <option value="">DDS</option>
+               <option value="">DO</option>
+               <option value="">ESQ</option>
+               <option value="">MD</option>
+               <option value="">RN</option>
+             </select>
+           </p>
+            </div>
+         </fieldset>
+         <fieldset>
+            <p><a href="#" class="drop_option button transfer">Balance Transfer - Open</a></p>
+            <div class="clear" style="display: none;width:668px; padding: 15px 0;">
+            <p class="inline clear"><label class="list" style="height: 40px;">&nbsp;</label> Transfer to my new account the amount(s) shown from the MasterCard<sup>&reg;</sup>,Visa<sup>&reg;</sup>, Discover<sup>&reg;</sup> or American Express<sup>&reg;</sup> account(s) listed below. If not transferring a balance, please leave blank. Please do not use commas in the amount fields.</p>
+               <p class="inline clear"><label for="acc1" class="list">Account Number: </label><input type="text" id="acc1" class="medium" title="required" name="acc1" value="" /><span class="inline spacer_left" >Amount: $ </span><input type="text" id="amt1" class="medium" title="required" name="amt1" value="" /></p>
+               <p class="inline clear"><label for="acc2" class="list">Account Number: </label><input type="text" id="acc2" class="medium" title="required" name="acc2" value="" /><span class="inline spacer_left" >Amount: $ </span><input type="text" id="amt2" class="medium" title="required" name="amt2" value="" /></p>
+               <p class="inline clear"><label for="acc3" class="list">Account Number: </label><input type="text" id="acc3" class="medium" title="required" name="acc3" value="" /><span class="inline spacer_left" >Amount: $ </span><input type="text" id="amt3" class="medium" title="required" name="amt3" value="" /></p>
+            </div>
+         </fieldset>
+         <fieldset>
+           <legend>Authorization<span class="req">*</span></legend>
+           <p>Everything I have stated in this application is true and correct. By using the account or any card, or authorizing their use, I agree to the terms of the Cardmember Agreement that I will receive with my card(s). The terms of my account, including the APRs, are subject to change. Any such changes will be made in accordance with the Cardmember Agreement.</p>
+           <p class="clear"><input type="checkbox" value="agree" name="" id="" class="spacer_right"><label for="">I have read the <a href="https://www.firstusa.com/cgi-bin/webcgi/webserve.cgi?page_type=appterms&card=CV4W" rel="external" title="Pricing and Terms">Pricing and Terms</a> for this account, which includes important information about rates, fees and other costs.</label></p>
+
+         <a href="#" id="review">Review</a>
+         </fieldset>
+      </>
+    </form>
+ <div id="popup_bankrupt" class="popup_block">
+    <a href="#" class="btn_close">close</a>
+   <p>You may not be eligible for this card at this time. Would you like to see other options?</p>
+   <p style="text-align:center;padding:5px;"><a href="https://applynow.chase.com/FlexAppWeb/renderApp.do?SPID=D2CX&CELL=6H90&MSC=FREEAPPC&AFFID=s6wX_2qIFSE-YEpF7oYOMl5jyhVsp90YCQ">Yes</a></p><p style="text-align:center;padding:5px;"><a href="#" class="btn_inside_no">No</a></p>
+</div>
+    <script src="scripts/jquery.1.4.2.min.js"></script>
+    <script src="scripts/jquery.autotab-1.1b.js"></script>
+    <script src="scripts/app_main.js"></script>
+  </body>
+</html>

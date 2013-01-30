@@ -1,0 +1,81 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en">  <!--<![endif]-->
+<head>
+   <meta charset="utf-8">
+   <!--[if IE]> 
+
+   <![endif]-->
+   <title>CHASE Blueprint: Enrollment</title>
+   <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+   <meta name="viewport" content="width=device-width,initial-scale=1">
+   <link rel="stylesheet" href="css/main.css">
+   <script src="js/modernizr.custom.13604.js"></script>
+</head>
+<body>
+   <div id="wrapper">
+      <div class="content clear">
+         <header class="clear">
+            <h1 class="logo ir">Chase</h1>
+            <h2 class="banner ir">Blueprint</h2>
+         </header>
+         <div class="content-main clear">
+            <div class="terms-stage">
+               <header>
+                  <h1>Terms for Full Pay Text Reminder Service</h1>
+               </header>
+               <p>Your enrollment in the Full Pay Text Reminder Service (“Text Services”) provides you with messages to your mobile number in accordance with these Terms. By enrolling in this program and indicating your consent to these Terms via the checkbox on the enrollment page, you agree  that Chase Bank USA N.A., its third party agents or affiliates (collectively “Chase”, “we”, “us”, or “our”) may send messages relating to your account and applicable “Full Pay” features to the mobile number you provided to us during enrollment. The Text Services are only available to customers who have an eligible account with us. There is no service fee for the Text Services but you are responsible for any and all charges, including, but not limited to, fees associated with text messaging imposed by your communications service provider. Message and data rates may apply. Such charges include those from your communications service provider. The number of messages you will receive each month will vary according to the number of transactions you make. To cancel the Text Services, send <strong>STOP</strong> to <strong>37029</strong>. For help or information on the Text Services, send <strong>HELP</strong> to <strong>37029</strong>. For additional assistance with the Text Services, contact customer service by calling 1-800-945-2000. By using the Text Services you represent and warrant to Chase that you have permission to use the mobile telephone number that you have provided. Additionally, you agree to indemnify, defend and hold us harmless from and against any and all claims, losses, liability, cost and expenses (including reasonable attorneys’ fees) arising from your provision of a phone number, e-mail address, or other delivery location that is not your own or your violation of applicable federal, state or local law, regulation or ordinance. Your obligation under this paragraph shall survive termination of the Agreement. You understand and agree these services may not be encrypted. Text Services may be delayed or impacted by factor(s) pertaining to your Internet service provider(s), phone carriers, or other parties. Messages are currently supported by the following mobile carriers: AT&amp;T, CBW, nTelos, U.S. Cellular Sprint, Nextel, Boost, Virgin Mobile, Verizon Wireless, T Mobile and Alltel. We will not be liable for losses or damages arising from any disclosure of account information to third parties, non-delivery, delayed delivery, misdirected delivery or mishandling of, or inaccurate content in, the messages sent through the Text Services or the use of this service.</p>
+            </div>
+         </div>
+      </div>
+      <footer class="clear">
+         <ul class="nav">
+            <li><a href="#">Chase.com/blueprint</a>&nbsp;&nbsp;&#124;&nbsp;&nbsp;</li>
+            <li><a href="#">Privacy Policy</a></li>
+         </ul>
+         <p class="tagline ir">
+            Chase what Matters&trade;
+         </p>
+      </footer>
+   </div>
+   <footer class="site-footer">
+      <p>&copy; <span class="date-year">2011</span> JPMorgan Chase &amp; Co. All rights reserved.</p>
+   </footer>
+   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+   <script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.8.1/jquery.validate.min.js"></script>   
+   <script>window.jQuery || document.write('<script src="js/jquery-1.6.4.min.js"><\/script>')</script>
+   <script>
+      jQuery(function() {
+         jQuery.support.placeholder = false;
+      	test = document.createElement('input');
+      	if('placeholder' in test) { jQuery.support.placeholder = true; }
+      }); 
+      
+       $(function() {
+      	if(!$.support.placeholder) { 
+      		var active = document.activeElement;
+      		$(':text').focus(function () {
+      			if ($(this).attr('placeholder') != '' && $(this).val() == $(this).attr('placeholder')) {
+      				$(this).val('').removeClass('hasPlaceholder');
+      			}
+      		}).blur(function () {
+      			if ($(this).attr('placeholder') != '' && ($(this).val() == '' || $(this).val() == $(this).attr('placeholder'))) {
+      				$(this).val($(this).attr('placeholder')).addClass('hasPlaceholder');
+      			}
+      		});
+      		
+      		$(':text').blur();
+      		$(active).focus();
+      		$('form').submit(function () {
+      			$(this).find('.hasPlaceholder').each(function() { $(this).val(''); });
+      		});
+      	}
+      });           
+      $(document).ready(function(){ 
+         $('form').validate(); 
+      });
+   </script>   
+</body>
+</html>

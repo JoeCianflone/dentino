@@ -1,0 +1,125 @@
+/* Reset Styles */ 
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure,  footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { background:transparent;  border:0;  font-size:100%;  margin:0;  padding:0;  outline:0; font-weight: normal; vertical-align:baseline; }                  
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block; }
+button, input, select, textarea { margin: 0; }
+input, select, button { vertical-align:middle; }
+input[type="radio"] { vertical-align: text-bottom; }
+input[type="checkbox"], input[type="submit"] { vertical-align: bottom; }
+button { width: auto; overflow: visible; }
+input[type="button"], input[type="submit"], button {  cursor: pointer; }
+label { vertical-align: middle; }
+a:hover, a:active, :focus { outline: none; }
+table { border-collapse:collapse; border-spacing:0; }
+textarea { overflow: auto; }
+strong, th { font-weight: bold; }
+del { text-decoration: line-through; }
+td, td img { vertical-align: top; }
+sub { font-size: 8px; vertical-align: sub; }
+sup { font-size: 8px; vertical-align: super; }
+ol { list-style-type: decimal; margin-left: 18px; }
+ul { list-style-type: disc; margin-left: 18px;}
+body, select, input, textarea { color: #000; font-family: Arial, Helvetica, Sans-Serif; font-size: 12px; }
+
+a { 
+   color: #0000ff;
+   text-decoration: none; 
+}
+
+#wrapper {
+   margin: 0 auto;
+   width: 794px;
+}
+#header .logo {
+   background: transparent url(../img/logo.png) 0 0 no-repeat;
+   height: 60px;
+   width: 100px;
+}
+#header h2 {
+   background: transparent url(../img/title.png) 0 0 no-repeat;
+   height: 100px;
+   margin: 30px 0 0 -4px;
+   width: 794px;
+}
+
+#masthead {
+   background: transparent url(../img/masthead.png) 0 0 no-repeat;
+   width: 794px;
+   height: 205px;
+   margin: -23px 0 0 -2px;
+}
+
+.button {
+   background: transparent url(../img/btn_apply-now.png) 0 0 no-repeat;
+   width: 148px;
+   height: 38px;
+}
+
+dl { 
+   background: transparent url(../img/btn_up.png) 0 6px no-repeat;
+   border-bottom: 1px solid #c9c9c9;
+   cursor: pointer;   
+   padding: 7px 0 8px 0;
+}
+
+dl.open {
+   background-image: url(../img/btn_down.png) ;
+}
+
+dl.no-toggle {
+   cursor: auto;
+}
+
+dl.last {
+   margin: 0 0 20px 0;
+}
+
+dl dt { 
+   color: #024886;
+   font-size: 14px;
+   font-weight: bold;
+   padding: 0 0 2px 28px;
+}
+
+dl dd {
+   color: #000;
+   cursor: auto !important;
+   display: none;
+   padding: 0 0 0 28px;
+   font-size: 11px;
+   width: 100%;
+}
+p {
+   padding:  0 0 5px 0;
+}
+ul li {
+   padding: 0 0 5px 0;
+}
+
+#content-main {
+   float: right;
+   width: 515px;
+   padding: 8px 0 0 0;
+}
+
+#content-secondary {
+   width: 267px;
+   float: left;
+   padding: 11px 0 0 0;
+}
+
+#content-secondary a { margin: 0 auto; }
+
+#footer {
+      height: 40px;
+      margin: 0 -120px 0 0;
+      background: transparent url(../img/secure-application.png) 100% 100% no-repeat;
+}
+
+/* image replacement */
+.ir { display: block; text-indent: -99999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+/* easy float clearing */
+.clear:before, .clear:after { content: "\0020"; display: block; height: 0; visibility: hidden; } 
+.clear:after { clear: both; }
+.clear { zoom: 1; }
+/* convert a unordered list into a nav element with NO bullets */
+.nav { list-style-type: none; margin-left: 0px; }

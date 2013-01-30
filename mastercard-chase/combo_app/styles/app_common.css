@@ -1,0 +1,367 @@
+@import 'reset.css';
+
+body {
+   color: #666;
+   background: transparent url(../images/background_body.png) 0px 0px repeat;
+   font-family: "trebuchet ms", Arial, Helvetica, sans-serif;
+   font-size: 11px;
+   line-height: normal;
+}
+.req { color: #ff0000; }
+
+#wrapper {
+   background: #fff url(../images/background_footer.gif) 0px 100% repeat-x;
+   border: 1px solid #cccdce;
+   margin: 20px auto;
+   padding: 0 0 20px 0;
+   width: 922px;
+}
+a { color: #1036f9; }
+header {
+   background: transparent url(../images/background_header.gif) 0px 0px no-repeat;
+   height: 435px;
+   padding: 0 0 10px 0;
+   position: relative;
+}
+
+fieldset {
+   margin: 0px auto;
+   width: 670px;
+}
+#inital_questions {
+   padding: 0 0 20px 0;
+}
+#inital_questions p { padding: 0 0 5px 0;    }
+
+fieldset legend {
+   color: #0066cc;
+   font-size: 17px;
+   padding: 20px 0 10px 0;
+   text-transform: uppercase;
+}
+
+p { padding: 4px 0 2px 0;}
+
+label { font-size: 11px; }
+
+
+label.list {
+   display: block;
+   float: left;
+   text-align: right;
+   padding: 5px 30px 0 0;
+   width: 239px;
+}
+
+label.alignbox { padding: 5px 14px 0 0;}
+.killpadding { padding: 5px 0 !important;}
+input, select { float: left; }
+
+input.long { width: 200px; }
+input.short { width: 37px; }
+input.phone { width: 56px; }
+input.medium { width: 111px; }
+
+.spacer_right { margin: 0 10px 0 0; }
+.spacer_left { margin: 0 0 0 10px; }
+.spacer_top { margin-top: 10px 0 0 0; }
+
+.inline {
+   float: left;
+   display: block;
+   width: auto;
+   padding: 5px;
+}
+
+.large_question {
+   width: 450px;
+   padding: 5px 5px 5px 0;
+}
+
+#review {
+   background: transparent url(../images/btn_review.gif) 0px 0px no-repeat;
+   width: 98px;
+   height: 34px;
+   float: left;
+   margin: 20px 0 0 275px;
+   text-indent: -9999px;
+}
+
+.privacy {
+   position: absolute;
+   text-indent: -9999px;
+   width: 33px;
+   height: 10px;
+   right: 87px ;
+   bottom: 102px;
+}
+
+.security {
+   position: absolute;
+   text-indent: -9999px;
+   width: 36px;
+   height: 10px;
+   right: 32px ;
+   bottom: 102px;
+}
+
+.terms {
+   position: absolute;
+   text-indent: -9999px;
+   width: 89px;
+   height: 10px;
+   left: 266px ;
+   bottom: 54px;
+}
+
+.LV_invalid_field,
+input.LV_invalid_field:hover,
+input.LV_invalid_field:active,
+textarea.LV_invalid_field:hover,
+textarea.LV_invalid_field:active {
+    border: 2px solid #CC0000;
+    background: #fefa8e;
+}
+.LV_invalid {
+   color:#CC0000;
+   margin:5px;
+   display: block;
+   float: left;
+}
+
+/*
+ * Rollover stuff
+ */
+
+.rollover_button {
+   position: absolute;
+
+}
+
+.text {
+   text-indent: -9999px;
+   display: block;
+}
+
+#arrow {
+   height: 186px;
+   left: 82px;
+   top: 196px;
+   width: 111px;
+}
+
+#cb1 {
+   position: absolute;
+   height: 20px;
+   left: 373px;
+   top: 164px;
+   width: 178px;
+}
+.cb1 {
+   left: 180px;
+   top: -29px;
+}
+#cb2 {
+   position: absolute;
+   height: 20px;
+   left: 373px;
+   top: 190px;
+   width: 178px;
+}
+.cb2 {
+   left: 180px;
+   top: -22px;
+}
+#cb3 {
+   position: absolute;
+   height: 20px;
+   left: 373px;
+   top: 215px;
+   width: 273px;
+}
+.cb3 {
+   left: 278px;
+   top: -29px;
+}
+
+#cb4 {
+   position: absolute;
+   height: 20px;
+   left: 328px;
+   top: 243px;
+   width: 402px;
+}
+.cb4 {
+   z-index: 500;
+   left: 400px;
+   top: -49px;
+}
+
+#cb5 {
+   position: absolute;
+   left: 475px;
+}
+.rollover_question  {
+   width: 20px;
+   padding: 0 0 0 5px;
+   float: left;
+}
+.cb5, .cb6, .cb7, .cb8 {
+margin:0 0 0 12px;
+top:-31px;
+}
+
+.cb6 {
+   top: -82px !important;
+}
+.cb7 {
+   top: -33px !important;
+}
+.cb8 {
+   top: -61px !important;
+}
+div.arrow {
+   top: 85px;
+   left: 75px;
+}
+.rollover_box {
+   background: transparent url(../images/bkg_overlay-arrow.png) 0px 50% no-repeat;
+   position: absolute;
+   display: none;
+
+   width: 321px;
+}
+.rollover_content {
+   position: relative;
+   width: 206px;
+   left: 50px;
+}
+.rollover_content p, .rollover_content a { color: #0066cc; }
+
+.rollover_header {
+   background: transparent url(../images/bkg_overlay-top.png) 0px 0px no-repeat;
+   height:11px;
+}
+.rollover_footer {
+   background: transparent url(../images/bkg_overlay-bottom.png) 0px 0px no-repeat;
+   height:13px;
+}
+.rollover_internal {
+   padding: 0px 15px 5px 10px;
+   background: transparent url(../images/bkg_overlay-middle.png) 0px 0px repeat-y;
+}
+
+.details_box {
+   position: absolute;
+   top: 279px;
+   left: 570px;
+   overflow: hidden;
+   height: 30px;
+}
+.details_button {
+   display: block;
+   width: 100%;
+   height: 31px;
+   background: transparent url(../images/btn_details.gif) 100% 0 no-repeat;
+}
+.close {
+   background: #fff;
+   display: none;
+   color: #666;
+   text-transform: uppercase;
+   width: 63px;
+   height: 10px;
+   padding: 5px;
+   right: 0px;
+   font-size: 10px;
+   left: 224px;
+   top: 10px;
+   position: absolute;
+}
+.details_panel {
+   background: #fff;
+   border: 1px solid #ddd;
+   height: 130px;
+   width: 300px;
+   padding: 10px;
+   overflow: scroll;
+}
+
+fieldset#username {
+   display: none;
+}
+
+#fade { /*--Transparent background layer--*/
+	display: none; /*--hidden by default--*/
+	background: #000;
+	position: fixed; left: 0; top: 0;
+	width: 100%; height: 100%;
+	opacity: .80;
+	z-index: 9999;
+}
+.popup_block{
+	display: none; /*--hidden by default--*/
+	background: #fff;
+	padding: 20px;
+	border: 5px solid #ddd;
+	float: left;
+	font-size: 1.2em;
+	position: fixed;
+	top: 50%; left: 50%;
+	z-index: 99999;
+}
+a.btn_close {
+   background: #fff;
+display:block;
+float:right;
+height:20px;
+margin:-40px -15px 0 0;
+text-align:center;
+width:60px;
+}
+/*--Making IE6 Understand Fixed Positioning--*/
+*html #fade {
+	position: absolute;
+}
+*html .popup_block {
+	position: absolute;
+}
+
+.button {
+
+   display: block;
+   width: 661px;
+   height: 42px;
+   display: block;
+   text-indent: -9999px;
+}
+.button:hover {
+   background-position: 0px -43px;
+}
+.cardholders {
+   background: transparent url(../images/btn_add-cardholder.gif) 0px 0px no-repeat;
+}
+
+.transfer {
+   background: transparent url(../images/btn_transfer.gif) 0px 0px no-repeat;
+}
+
+
+.error_field {
+   border: 1px solid #f00;
+   background: #fefa8e;
+
+}
+.error {
+   color: #f00;
+   padding: 5px 0 15px 270px;
+}
+
+.btn_print {
+   padding: 8px 20px;
+   color: #0066cc;
+   font-size: 13px;
+   bottom: 10px;
+   right: 14px;
+   position: absolute;
+}

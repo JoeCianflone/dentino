@@ -1,0 +1,89 @@
+/**
+ * Reset all CSS elements
+ * -----------------------------------------------------------------------------
+ */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font,
+img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd,
+ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead,
+tr, th, td, article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video  {
+  border: 0;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary {
+    display:block;
+}
+
+:focus { outline: 0; }
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+ol, ul { list-style: none; }
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+caption, th, td { font-weight: normal; text-align: left; }
+blockquote:before, blockquote:after, q:before, q:after { content: ""; }
+blockquote, q { quotes: "" ""; }
+
+/**
+ * Build up some specific elements
+ * -----------------------------------------------------------------------------
+ */
+
+input, select {
+   font-family: inherit;
+   font-size: inherit;
+   vertical-align: middle;
+}
+textarea  { font-family: inherit; font-size: inherit; }
+em        { font-style: italic;                       }
+strong    { font-weight: bold;                        }
+ins       { text-decoration: none;                    }
+del       { text-decoration: line-through;            }
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted #000;
+    cursor:help;
+}
+sup {
+   font-size: .7em;
+   vertical-align: text-top;
+}
+
+sub {
+   font-size: .7em;
+   vertical-align: text-bottom;
+}
+
+html      { font-size: 62.5%                          }
+
+/**
+ * Float clearing CSS
+ * -----------------------------------------------------------------------------
+ */
+
+.clear:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+  }
+* html .clear             { zoom: 1; } /* IE6 */
+*:first-child+html .clear { zoom: 1; } /* IE7 */
